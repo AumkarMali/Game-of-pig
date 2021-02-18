@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+
+<head>
+    <link rel="stylesheet" href="style34.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        img.center {
+            position: absolute;
+            top: 0;
+            bottom: 65%;
+            left: 0;
+            right: 36%;
+            margin: auto;
+        }
+    </style>
+
+    <script>
+        var score;
+        var score1;
+        var win = 0;
+        var win2 = 0;
+
+        function initialize() {
+            score = 0;
+            score1 = 0;
+
+        }
+
+        function pig() {
+
+            var arr2 = [1, 2, 2, 3, 3, 4, 4, 5, 5, 6]
+            var dice = arr2[Math.floor(Math.random() * arr2.length)]
+            score = score + dice;
+
+            if (dice != 1 || dice != 6) {
+                document.getElementById('lll').innerHTML = score;
+            }
+
+
+            var dice2 = dice;
+
+            if (dice2 == 6 || dice2 == 1) {
+                score = 0;
+                document.getElementById('lll').innerHTML = score;
+
+            }
+
+            if (dice == 1) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice2.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (dice == 2) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice1.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (dice == 3) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice3.gif");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (dice == 4) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice4.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (dice == 5) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice5.gif");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (dice == 6) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice6.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+        }
+
+
+
+
+
+        function play() {
+
+            var arr = [1, 2, 2, 3, 3, 4, 4, 5, 5, 6]
+            var roll = arr[Math.floor(Math.random() * arr.length)]
+
+            score1 = score1 + roll;
+
+            if (roll != 1 || roll != 6) {
+                document.getElementById('bbb').innerHTML = score1;
+            }
+
+            var dice4 = roll;
+
+            if (dice4 == 6 || dice4 == 1) {
+                score1 = 0;
+                document.getElementById('bbb').innerHTML = score1;
+
+            }
+
+
+            if (roll == 1) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice2.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (roll == 2) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice1.gif");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (roll == 3) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice3.gif");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (roll == 4) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice4.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (roll == 5) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice5.gif");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+            if (roll == 6) {
+                var x = document.createElement("IMG")
+                x.setAttribute("class", "center")
+                x.setAttribute("src", "dice6.png");
+                x.setAttribute("width", "70");
+                x.setAttribute("height", "70");
+                x.setAttribute("alt", "The Pulpit Rock");
+                document.body.appendChild(x);
+            }
+
+        }
+
+        function reset() {
+            x = document.getElementById("myAudio");
+            x.pause();
+            y = document.getElementById("Audio");
+            y.pause();
+            score = 0;
+            score1 = 0;
+            document.getElementById('lll').innerHTML = score;
+
+            document.getElementById('bbb').innerHTML = score1;
+
+            document.getElementById('jjj').innerHTML = "player 1";
+
+            document.getElementById('jj').innerHTML = "player 2";
+
+            document.getElementById('po').innerHTML = score;
+
+            document.getElementById('xxx').innerHTML = score1;
+
+        }
+
+
+
+        function hello(num) {
+
+            if (num > 0 && score >= num) {
+                document.getElementById('jjj').innerHTML = "WINNER!";
+                document.getElementById('po').innerHTML = score;
+
+                var x = document.getElementById("myAudio");
+                x.play();
+            } else if (score < num) {
+                document.getElementById('po').innerHTML = score;
+            }
+
+
+            if (num > 0 && score1 >= num) {
+                document.getElementById('jj').innerHTML = "WINNER!";
+                document.getElementById('xxx').innerHTML = score1;
+
+                var y = document.getElementById("Audio");
+                y.play();
+            } else if (score1 < num) {
+                document.getElementById('xxx').innerHTML = score1;
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="initialize()" style="background-color:F9F5F5;">
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-2 ">
+                <h1 id='jjj' style="color:red;">player 1</h1>
+                <button class="buttonroll" id='po'> 0 </button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button id='lll' class="button2211"> score P1 </button>
+
+            </div>
+
+            <div class="col-1 ">
+                <img src="plus.jpg" style="float:right;width:40px;height:35px;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="res.png" style="float:right;width:40px;height:35px;">
+                <br>
+                <br>
+                <img src="box.png" style="float:right;width:40px;height:35px;">
+
+            </div>
+
+            <div class="col-3 ">
+                <button type="button" class="button33" onclick="reset()">NEW GAME</button>
+                <br>
+                <input type="number" id="num" placeholder="enter winning score"><br>
+                <br>
+                <audio id="myAudio">
+                    <source src="sds.ogg" type="audio/ogg">
+                    <source src="sds.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="Audio">
+                    <source src="jojo.ogg" type="audio/ogg">
+                    <source src="jojo.mp3" type="audio/mpeg">
+                </audio>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button id="wat" type="button" class="button33" onclick="pig()">ROLL DICE P1</button>
+                <button id="wat" type="button" class="button33" onclick="play()">ROLL DICE P2</button>
+                <br>
+                <button type="button" class="hold" onclick="hello(num.value)">hold</button>
+                <br>
+            </div>
+
+            <div class="col-6 ">
+                <h1 id='jj' style="color:red;">player 2</h1>
+                <button class="buttonroll" id='xxx'> 0 </button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button id='bbb' class="button2211"> score P2 </button>
+                <h2 id='jjj'></h2>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
